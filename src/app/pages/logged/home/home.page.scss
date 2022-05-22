@@ -1,0 +1,80 @@
+ion-select{
+    max-width: 50vw !important;
+}
+
+.app-content {
+    z-index: 15;
+    position: absolute;
+
+    h1 {
+        font-size: 1.6em;
+        font-weight: 300;
+        color: white;
+        padding-left: 20px;
+        margin-top: 0;
+    }
+}
+.bkg-detail {
+    width: 100vw;
+    height: 8.5em;
+    object-fit: fill;
+    position: absolute;
+    z-index: 0;
+    background-color: var(--ion-color-primary);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+
+:host ion-fab {
+    bottom: 10px;
+}
+
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+}
+
+:host ion-avatar {
+    width: 4em;
+    height: 4em;
+}
+
+.store-info-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .star{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center;
+        ion-icon{
+            width: 1em;
+            height: 1em;
+            margin-right: .3em;
+        }
+
+        span{
+            font-size: .9em;
+        }
+    }
+}
+
+.big-nothing{
+    height: 15vh;
+    width: 100vw;
+    content: ' ';
+    background-color: transparent;
+}

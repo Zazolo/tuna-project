@@ -1,0 +1,17 @@
+<div class="container" *ngIf="promotion != undefined" [ngStyle]="{'background-image': 'url(' + promotion.image + ')'}">
+  <div class="text-container">
+    <span></span>
+    <div class="store-info">
+      <div class="promo-text">{{promotion.text_data}}</div>
+      <div class="author-card">
+        <div class="store-image">
+          <img [src]="promotion.author.picture" [alt]="'Foto de imagem do restaurante chamado ' + promotion.author.name">
+        </div>
+        <div class="store-name">
+          <p>{{promotion.author.name}}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+<ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-select value="brown" okText="Selecionar" cancelText="Cancelar">
+      <ion-select-option value="brown">Rua Valdemar Ferreira da Silva, 68</ion-select-option>
+    </ion-select>
+  </ion-buttons>
+  <ion-buttons slot="secondary">
+    <ion-button (click)="goCart()">
+      <ion-icon name="cart-outline"></ion-icon>
+      <ion-badge color="secondary">1</ion-badge>
+    </ion-button>
+    <ion-button (click)="goNotification()">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-badge color="secondary">3</ion-badge>
+    </ion-button>
+    <ion-button (click)="toolbarMenuOptionsShow()">
+      <ion-icon name="grid-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+  <div class="bkg-detail"></div>
+  <div class="app-content">
+    <h1>Olá, Tiago <br> O que você quer comer hoje?</h1>
+    <app-food-type-carrousel></app-food-type-carrousel>
+    <app-section-heading [loadingState]="false" title="Promoções"></app-section-heading>
+    <!--card de promoções-->
+    <app-promotion-banner></app-promotion-banner>
+    <app-section-heading [loadingState]="false" title="Recentes"></app-section-heading>
+      <!---Lista dos top 10 últimos restaurantes (E DISPONÍVEIS) que o usuário comprou-->
+      <ion-list>
+
+        <ion-item class="on-activatable ripple-parent">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-avatar slot="start">
+            <img src="https://i.pinimg.com/favicons/87e96d4480752816f1151530f8dbf33ace01f1c0898003848bc237c9.png?fc370177a422463bb1cbef757aaefafc" />
+          </ion-avatar>
+          <ion-label>
+            <h2>Título da loja</h2>
+            <h3>Último pedido realizado há 1 semana</h3>
+            <p>Entregas estimadas em 45 minutos</p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+      <!-----FIM DA LISTA-->
+
+    <app-section-heading [loadingState]="false" title="Lojas da região"></app-section-heading>
+    <!---Lista completa com todas as lojas disponíveis para o usuário em ordem de qtd de vendas-->
+    <ion-list>
+
+      <ion-item class="on-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/favicons/87e96d4480752816f1151530f8dbf33ace01f1c0898003848bc237c9.png?fc370177a422463bb1cbef757aaefafc" />
+        </ion-avatar>
+        <ion-label>
+          <div class="store-info-container">
+            <div class="text">
+              <h2>Título da loja</h2>
+              <h3>Disponível</h3>
+              <p>Lanches - Pizza - Japonesa</p>
+            </div>
+            <div class="star">
+              <ion-icon name="star-outline"></ion-icon>
+              <span>4.5</span>
+            </div>
+          </div>
+          
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+    <!-----FIM DA LISTA-->
+
+    <div class="big-nothing"></div>
+  </div>
+
+  
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" edge slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button (click)="goSearch()">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="help-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>

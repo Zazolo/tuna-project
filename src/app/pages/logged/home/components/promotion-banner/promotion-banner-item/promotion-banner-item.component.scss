@@ -1,0 +1,74 @@
+.container{
+    width: calc(15em * 1.33333);
+    margin-bottom: 1.5em;
+    height: 15em;
+    overflow: hidden;
+    border-radius: .8em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0 -6em 7em 0 rgba(0,0,0,0.22) inset, 2px 4px 25px 0 rgba(0,0,0,0.18) ;
+    box-shadow: 0 -6em 7em 0 rgba(0,0,0,0.22) inset, 2px 4px 25px 0 rgba(0,0,0,0.18) ;
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        width: calc(15em * 1.33333);
+        height: 15em;
+        .store-info {
+            padding-left: .8em;
+            padding-bottom: .8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            vertical-align: middle;
+            align-items: baseline;
+
+            .promo-text {
+                font-size: 1.3em;
+                font-weight: bolder;
+                word-wrap: break-word;
+                max-width: calc(15em * 1.33333);
+                height: fit-content;
+                color: white;
+                padding-bottom: 8px;
+                white-space: normal;
+                text-overflow: ellipsis;
+                letter-spacing: 0.1em;
+                word-spacing: 0.1em;
+                text-shadow: 0px 0px .5em rgba(0,0,0,1) ;
+            }
+
+            .author-card{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                vertical-align: middle;
+                align-items: center;
+                .store-image {
+                    img {
+                        object-fit: cover;
+                        width: 2em;
+                        height: 2em;
+                        border-radius: 50%;
+                    }
+                }
+    
+                .store-name {
+                    
+                    padding-left: .5em;
+                    p {
+                        line-height: normal;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 600;
+                        font-size: .9em;
+                        max-width: calc(15em * 1.33333);
+                        color: white;
+                    }
+                }
+
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="256"
+   viewBox="0 0 211.66666 67.733335"
+   version="1.1"
+   sodipodi:docname="home_bkg_shape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:zoom="1.466875"
+     inkscape:cx="376.65104"
+     inkscape:cy="111.12058"
+     inkscape:window-width="2560"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="3.0663257,99.118082"
+       orientation="0,-1"
+       id="guide1979" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="opacity:1">
+    <path
+       id="rect1174"
+       style="fill:#fe4040;stroke-width:0.264583;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="m 0,0 h 211.66667 l 0,35.685721 c 0,0 -27.0924,-3.516584 -40.67315,-2.938434 C 123.91466,34.751494 64.735023,62.483519 0,57.150002 Z"
+       sodipodi:nodetypes="cccscc" />
+  </g>
+</svg>

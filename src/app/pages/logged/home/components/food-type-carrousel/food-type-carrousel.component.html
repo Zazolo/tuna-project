@@ -1,0 +1,5 @@
+<div class="wrapper">
+  <div class="item" *ngFor="let cat of catNames.value">
+    <app-food-type-carrousel-item [name]="cat.label" [imageFileName]="cat.imageName"></app-food-type-carrousel-item>
+  </div>
+</div>

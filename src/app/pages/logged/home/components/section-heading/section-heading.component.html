@@ -1,0 +1,8 @@
+<div class="container">
+  <p *ngIf="!loadingState">
+    {{title}}
+  </p>
+  <ion-skeleton-text *ngIf="loadingState" animated style="width: 40%; height: 1.5em;"></ion-skeleton-text>
+</div>
+
+
